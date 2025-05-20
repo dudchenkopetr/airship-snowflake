@@ -1,0 +1,42 @@
+/**
+ * Global drawer component styles
+ * These styles apply to all drawer components in the application
+ */
+
+/* Hide the close button (X) in the drawer */
+[role="dialog"] > button[aria-label="Close drawer"] {
+  display: none;
+}
+
+/* Remove the default padding to use full width */
+[role="dialog"] {
+  padding: 0 !important;
+}
+
+/* Add padding to the drawer content only */
+.drawer-custom-content {
+  padding: 0 1rem;
+}
+
+/* Drawer header */
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Drawer title */
+.drawer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Button sizes for drawer header */
+.drawer-button {
+  height: 2.25rem;
+  padding: 0 0.75rem;
+}
